@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo clases/elementos </title>
+    <style>
+        p:hover {
+            color: tomato;
+            font-family: 'Courier New', Courier, monospace;
+        }
+
+        p:nth-child(2) {
+            color: blue;
+        }
+        p::before{
+            content: "👉";
+        }
+        p::after{
+            content: "❤";
+        }
+        p::first-letter{
+            font-size: large;
+            color:black;
+        }
+        ::placeholder{
+            color: aqua;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Et cumque expedita perspiciatis ipsa ex animi,
+            delectus explicabo placeat itaque nisi? Corrupti assumenda officia velit quas nemo libero pariatur sint
+            fugit!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel, possimus pariatur. Magni vel cum dolorum ab
+            exercitationem soluta. Consequuntur harum ut hic labore laudantium ipsa id ad, reprehenderit deserunt.
+            Laboriosam.</p>
+    </div>
+    <br>
+    <div>
+        <input type="text" name="" id="" placeholder="Name">
+    </div>
+</body>
+
+</html>

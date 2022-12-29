@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectones combinadores</title>
+    <style>
+        div p {
+            color: lime;
+        }
+
+        div > div {
+            background: plum;
+        }
+
+        .es {
+            background:wheat;
+        }
+
+        div + section {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        div ~ p {
+            color: rgb(26, 141, 156);
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        </p>
+        <p>
+            consectetur adipisicing elit, Lorem ipsum dolor sit amet.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        </p>
+    </div>
+    <div>
+        <div>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi quam odit deleniti accusantium quae
+                eaque dolorem error blanditiis cupiditate! Aspernatur enim eveniet praesentium incidunt similique
+                repellendus omnis cumque suscipit eaque.</p>
+            <div class="es">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+            </div>
+        </div>
+    </div>
+    <section>
+        Frontend
+    </section>
+    <div>
+        Master        
+    </div>
+    <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet alias adipisci quisquam quas in. Exercitationem quam fuga, numquam eius alias, qui earum ex vero, et quidem eum. Aspernatur, magni officia?
+    </p>
+    
+</body>
+
+</html>
