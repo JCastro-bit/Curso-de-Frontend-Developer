@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Z-Index</title>
+    <style>
+        div {
+            position: absolute;
+            background-color: aqua;
+            font-size: larger;
+        }
+
+        .one {
+            z-index: 5;
+            /*Se pondra encima de 4 */
+        }
+
+        .two {
+            z-index: 4;
+        }
+
+        .red{
+            width: 200px;
+            height: 200px;
+            background-color: red; 
+            z-index: 5;
+        }
+        
+        .blue{
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            z-index: 4;
+        }
+
+        .yellow{
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+            z-index: 6;
+            top: -6px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="one">Javier</div>
+    <div class="two">Castro</div>
+    <br>
+    <section>
+        <div class="red">red</div>
+        <div class="blue">Blue
+            <div class="yellow">
+                Yellow
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
