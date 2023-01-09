@@ -1,12 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Propiedades + usadas</title>
+    <style>
+        body {
+            background-color: beige;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        section {
+            width: 100%;
+            /* ajusta el ancho al 100% de la pagina */
+            display: flex;
+            justify-content: center;
+        }
+
+        .card {
+            margin-top: 30px;
+            width: 500px;
+            height: 500px;
+            background: rgb(255, 255, 255);
+            border-radius: 20px;
+            overflow: hidden;
+            /* Todo lo que se salga lo va a esconder*/
+            box-shadow: 5px 5px 38px 1px rgb(141, 139, 139);
+        }
+
+        .card img {
+            /*La imagen que esta dentro de .card*/
+            width: 100%;
+            height: 30%;
+        }
+
+        .card h1 , h2{
+            text-align: center;
+            position: relative;
+            top: -6rem; 
+        }
+        
+        
+        .perfil-contenedor {            
+            display: flex;
+            justify-content: center;
+            position: relative;
+            top: -6rem; 
+            left: 33.3%;           
+            width: 160px;            
+        }
+
+        .perfil {
+            border-radius: 100%;
+            border: 3px solid white;
+            width: 50%;
+        }
+
+    </style>
 </head>
+
 <body>
-    
+    <section>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1533135091724-62cc5402aa20?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                alt="fondo morado">
+            <div class="perfil-contenedor">
+                <img class="perfil" src="https://avatars.githubusercontent.com/u/53741735?v=4" alt="Javier Castro">
+            </div>
+            <h1>Javier Castro</h1>
+            <h2>Desarrollador Web</h2>
+        </div>
+    </section>
 </body>
+
 </html>
